@@ -35,7 +35,7 @@ class World:
             (WIDTH, 0 - (bottom_pipe_height + pipe_gap)),
             pipe_size,
             HEIGHT,
-            False,
+            True,
         )
         pipe_bottom = Pipe(
             (WIDTH, top_pipe_height + pipe_gap),
@@ -64,7 +64,7 @@ class World:
         """add gravity to bird for falling"""
         if self.playing or self.game_over:
             player.direction.y += self.gravity
-            player.rect.y = player.direction.y
+            player.rect.y += player.direction.y
 
     def _handle_collisions(self):
         """handles scoring and collision"""
