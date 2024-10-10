@@ -24,5 +24,5 @@ class GameIndicator:
         inst_text2 = "Press \"R\" Button to Restart Game"
         ins1 = self.inst_font.render(inst_text1, True, self.inst_color)
         ins2 = self.inst_font.render(inst_text2, True, self.inst_color)
-        self.screen.blit(ins1, (95, 400))
-        self.screen.blit(ins2, (70, 450))
+        self.screen.blit(ins1, (160, 400))
+        self.screen.blit(ins2, (120, 450))
